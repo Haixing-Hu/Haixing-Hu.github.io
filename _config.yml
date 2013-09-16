@@ -1,3 +1,32 @@
-name: Your New Jekyll Site
-markdown: redcarpet
-pygments: true
+# standard jekyll configuration
+
+safe:           true
+lsi:            false
+permalink:      /articles/:title
+pygments:       true
+markdown:       rdiscount
+markdown_ext:   markdown,mkd,mkdn,md
+textile_ext:    textile
+
+# enables SmartyPants (nice curly quotation marks, em/en dashes, elipses, etc):
+rdiscount:
+    extensions: [smart]
+
+# configuration required for some pages
+
+domain:         haixing-hu.github.io
+name:           Starfish's Home Page
+author:         Haixing Hu
+email:          starfish.hu@gmail.com
+
+# configuration for enhancements, uncomment to enable
+
+# feedburner:
+#   id: feedburnerid
+
+# google_analytics:
+#   account: UA-XXXXX-X
+
+github:
+    username:   Haixing-Hu
+    repository: Haixing-Hu.github.io
