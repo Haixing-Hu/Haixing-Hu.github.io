@@ -1,0 +1,11 @@
+a.cc-logo {
+  text-decoration: none !important;
+}
+a.cc-logo:hover {
+  text-decoration: none !important;
+}
+img.cc-logo {
+  height: 16px;
+  width: auto;
+  vertical-align: -3px;
+}
