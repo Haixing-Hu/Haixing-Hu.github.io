@@ -95,53 +95,48 @@ ol, ol li {
   letter-spacing: -1px;
   line-height: 110%;
 }
-#header a {
-  color: #2867a9;
-}
 #logo, #logo a {
   color: #fff;
 }
-#header a:hover {
-  color: #003166;
-}
 #navigation {
-  display: inline;
+  float: right;
+  border: 0;    
+  table-layout: fixed;
+  margin: 0;
+  padding: 0;
+  width: auto;
 }
-#navigation ul {
-  display: inline !important;
-  list-style-type: none !important;
+#navigation tr {
+  margin: 0;
+  padding: 0;
+  text-align: middle;
+  width: 100%;
 }
-#navigation li {
-  display: inline !important;
+#navigation td {
+  width: 60px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
-#navigation li a {
+#navigation td a {
   color: #ffffff;
   display: inline-block;
   height: 100px;
+  width: 100%;
   line-height: 100px;
-  padding: 0 14px;
+  padding: 0;
   text-decoration: none;
   vertical-align: top;
 }
-#navigation li a:hover {
+#navigation td a:hover {
   background: url(/img/bg-navigation-hover-blue.gif);
   background-repeat: repeat-x;
   color: #ffffff;
 }
-#active a:link {
+#navigation td.menu-item-active a {
   background: url(/img/bg-navigation-hover-blue.gif);
   background-repeat: repeat-x;
-  color: #222222;
-}
-#active a:hover {
-  background: url(/img/bg-navigation-hover-blue.gif);
-  background-repeat: repeat-x;
-  color: #222222;
-}
-#active a:visited {
-  background: url(/img/bg-navigation-hover-blue.gif);
-  background-repeat: repeat-x;
-  color: #222222;
+  color: #ffffff;
 }
 #banner {
   background-color: #fff;
