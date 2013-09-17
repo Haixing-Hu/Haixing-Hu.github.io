@@ -2,7 +2,7 @@
 
 safe:           true
 lsi:            false
-permalink:      /articles/:title
+permalink:      /post/:title
 pygments:       true
 markdown:       rdiscount
 markdown_ext:   markdown,mkd,mkdn,md
@@ -15,9 +15,21 @@ rdiscount:
 # configuration required for some pages
 
 domain:         haixing-hu.github.io
-name:           Starfish's Home Page
+name:           Haixing Hu's Home Page
 author:         Haixing Hu
 email:          starfish.hu@gmail.com
+
+license:
+  url:        http://creativecommons.org/licenses/by-nc-sa/3.0/
+  img:        [/img/cc.png, /img/by.png, /img/nc.png, /img/sa.png]
+
+# since the `categoreis` is predefined collection of `site`, we have to use
+# another name for the following property
+sections: 
+  - {name: study, banner: /img/banner_study.jpg}
+  - {name: work, banner: /img/banner_work.jpg}
+  - {name: life, banner: /img/banner_life.jpg}
+  - {name: about, banner: /img/banner_about.jpg}
 
 # configuration for enhancements, uncomment to enable
 
@@ -28,5 +40,5 @@ email:          starfish.hu@gmail.com
 #   account: UA-XXXXX-X
 
 github:
-    username:   Haixing-Hu
-    repository: Haixing-Hu.github.io
+  username:   Haixing-Hu
+  repository: Haixing-Hu.github.io

@@ -1,0 +1,34 @@
+<div id="header">
+  <table id="logo-table">
+	<tr>
+	  <td>
+		<div id="logo">
+          <span class="site-logo">
+            <a href="/"><span id="site-name">{{ site.name }}</span></a>
+          </span>
+        </div>
+	  </td>
+	</tr>
+  </table>
+  <div id="navigation">
+	<ul>
+      <li class="active-menu-item">
+        <a href="/index.html">Home</a>
+      </li>
+      {% for sec in site.sections %}
+      <li class="menu-item">        
+        <a href="/{{ sec.name }}.html">{{ sec.name | capitalize }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{% if page.category %}
+    {% for sec in site.sections %}
+      {% if sec.name == page.category %}
+        <div id="banner">
+          <img src="{{ sec.banner }}"/>
+        </div>
+      {% endif %}
+    {% endfor %}
+{% endif %}

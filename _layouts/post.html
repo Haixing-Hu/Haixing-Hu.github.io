@@ -1,9 +1,8 @@
 ---
-layout: default
+layout: two-columns
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
-
-<div class="post">
+<h2 class="blog-title">{{ page.title }}</h2>
+<p class="blog-date">{{ page.date | date: "%d %b %Y %H:%M:%S" }}</p>
+<div class="blog-body">
 {{ content }}
 </div>
