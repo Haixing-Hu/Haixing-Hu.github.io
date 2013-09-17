@@ -18,7 +18,7 @@ title: Home
     {% for post in paginator.posts %}    
       <a href="{{ post.url }}"><h3 class="title">{{ post.title }}</h3></a>
       {% assign this_post = post %}
-      {% include author-info.html %}
+      {% include post-info.html %}
       <div class="content">
         {{ post.excerpt | markdownify }}
       </div>
