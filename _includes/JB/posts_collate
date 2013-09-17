@@ -31,16 +31,16 @@ Usage:
       {% endunless %}
       <h2>{{this_year}}</h2>
       <h3>{{this_month}}</h3>
-      <ul class="unstyled">
+      <ul>
     {% else %}
       {% if this_month != last_month %}
       </ul>
       <h3>{{this_month}}</h3>
-      <ul class="unstyled">
+      <ul>
       {% endif %}
     {% endif %}
       <li>
-        <a href="{{ BASE_PATH }}{{ post.url }}"><i class="icon-file"></i>{{ post.title }}</a>
+        <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
          - <span>{{ post.date | date: "%b %d, %Y" }}</span>
       </li>    
     {% if forloop.last %}
