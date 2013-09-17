@@ -1,0 +1,41 @@
+<ul class="inline contact">
+  {% if site.author.github %}
+  <li>
+    <a target="_blank" href="https://github.com/{{site.author.github}}">
+      <img src="/assets/img/github.png"/>
+    </a>
+  </li>
+  {% endif %}
+
+  {% if site.author.weibo %}
+  <li>
+    <a target="_blank" href="http://weibo.com/u/{{site.author.weibo}}">
+      <img src="/assets/img/weibo.png"/>
+    </a>
+  </li>
+  {% endif %} 
+
+  {% if site.author.twitter %}
+  <li>
+    <a target="_blank" href="https://twitter.com/{{site.author.twitter}}">
+      <img src="/assets/img/twitter.png"/>
+    </a>
+  </li>
+  {% endif %}   
+
+  {% if site.author.facebook %}
+  <li>
+    <a target="_blank" href="http://www.facebook.com/{{site.author.facebook}}">
+      <img src="/assets/img/facebook.png"/>
+    </a>
+  </li>
+  {% endif %}  
+
+  {% if site.author.linkedin %}
+  <li>
+    <a target="_blank" href="http://cn.linkedin.com/in/{{site.author.linkedin}}">
+      <img src="/assets/img/linkedin.png"/>
+    </a>
+  </li>
+  {% endif %}
+</ul>

@@ -1,0 +1,16 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="container-narrow">
+      <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+      <ul class="nav">
+        {% for sec in site.sections %}
+          {% if page.url == sec.url %}
+          <li class="active"><a href="{{ BASE_PATH }}{{sec.url}}" class="active">{{sec.title}}</a></li>
+          {% else %}
+      	  <li><a href="{{ BASE_PATH }}{{sec.url}}">{{sec.title}}</a></li>
+      	  {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>

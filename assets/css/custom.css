@@ -9,3 +9,12 @@ img.cc-logo {
   width: auto;
   vertical-align: -3px;
 }
+.read-more {
+  text-align: right;
+}
+.contact {
+  float: right;
+}
+.pagination {
+  text-align: center;
+}

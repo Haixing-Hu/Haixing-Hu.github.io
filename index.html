@@ -1,0 +1,60 @@
+---
+layout: default
+title: Home
+---
+{% include JB/setup %}
+
+<div class="page-header">
+  {% include contact.html %}
+  <h1>
+    {{ site.author.name }}
+    {% if site.tagline %}<br/><small>{{ site.tagline }}</small>{% endif %}
+  </h1>
+</div>
+
+<div class="row-fluid">
+  <!-- recent posts -->
+  <div id="recent-posts">
+    {% for post in paginator.posts %}    
+      <a href="{{ post.url }}"><h3 class="title">{{ post.title }}</h3></a>
+      {% assign this_post = post %}
+      {% include author-info.html %}
+      <div class="content">
+        {{ post.excerpt | markdownify }}
+      </div>
+      <div class="read-more">
+        <a href="{{ post.url }}">Read More ...</a>
+      </div>
+    {% endfor %}
+  </div>
+  <!-- pagination links -->
+  <div class="pagination">
+      <ul>
+      {% if paginator.next_page %}
+        <li class="prev">
+          <a href="{{ paginator.next_page_path }}">&larr; Older</a>
+        </li>
+      {% else %}
+        <li class="prev disabled">
+          <a>&larr; Older</a>
+        </li>
+      {% endif %}
+      <li>
+        <a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a>
+      </li>
+      {% if paginator.previous_page %}
+        <li class="next">
+          {% if paginator.previous_page == 1 %}
+          <a href="/">Newer &rarr;</a>          
+          {% else %}
+          <a href="{{ paginator.previous_page_path }}">Newer &rarr;</a>
+          {% endif %}
+        </li>
+      {% else %}
+        <li class="next disabled">
+          <a>Newer &rarr;</a>
+        </li>
+      {% endif %}
+      </ul>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="date">
+  <span class="date">{{ this_post.date | date: "%b %d, %Y" }}</span>
+  &nbsp;|&nbsp;by <span class="author">
+    {% if this_post.author %}
+      {{ this_post.author }}
+    {% else %}
+      {{ site.author.name }}
+    {% endif %}
+  </span>
+</div>
