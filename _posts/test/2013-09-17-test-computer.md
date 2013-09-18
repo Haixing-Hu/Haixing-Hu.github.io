@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Test life category"
-description: "A post in the life category"
-category: life
+title: "Test computer category"
+description: "A post in the computer category"
+category: computer
 tags: [test]
 ---
 

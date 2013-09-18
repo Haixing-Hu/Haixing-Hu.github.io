@@ -37,24 +37,13 @@ license:
 # since the `categoreis` is predefined collection of `site`, we have to use
 # another name for the following property
 sections: 
-  - name: study
-    title: Study
-    url: /study.html
-  - name: work
-    title: Work
-    url: /work.html
-  - name: life, 
-    title: Life
-    url: /life.html
-  - name: archive
-    title: Archive
-    url: /archive.html
-  - name: tags
-    title: Tags
-    url: /tags.html
-  - name: about
-    title: About 
-    url: /about.html
+    - research
+    - programming
+    - computer
+    - life
+    - archive
+    - tags
+    - about
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -111,8 +100,8 @@ JB :
   archive_path: /archive.html
   categories_path : /categories.html
   tags_path : /tags.html
-  atom_path : /atom.xml
-  rss_path : /rss.xml
+  atom_path : /feed.atom
+  rss_path : /feed.rss
 
   # Settings for comments helper
   # Set 'provider' to the comment provider you want to use.

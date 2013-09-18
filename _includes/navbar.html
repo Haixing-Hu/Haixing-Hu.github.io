@@ -2,15 +2,21 @@
 <div class="navbar">
   <div class="navbar-inner">
     <div class="container-narrow">
-      <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+      <a class="brand" href="{{ HOME_PATH }}">{{ site.author.name }}</a>
       <ul class="nav">
         {% for sec in site.sections %}
-          {% if page.url == sec.url %}
-          <li class="active"><a href="{{ BASE_PATH }}{{sec.url}}" class="active">{{sec.title}}</a></li>
+          {% capture sec_url %}/{{sec}}.html{% endcapture %}
+          {% if page.url == sec_url %}
+          <li class="active">
+            <a href="{{ BASE_PATH }}{{sec_url}}" class="active">{{sec | capitalize}}</a>
+          </li>
           {% else %}
-      	  <li><a href="{{ BASE_PATH }}{{sec.url}}">{{sec.title}}</a></li>
+      	  <li>
+            <a href="{{ BASE_PATH }}{{sec_url}}">{{sec | capitalize}}</a>
+          </li>
       	  {% endif %}
         {% endfor %}
+        {% include feed.html %}
       </ul>
     </div>
   </div>

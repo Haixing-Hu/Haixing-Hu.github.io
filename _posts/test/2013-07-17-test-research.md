@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Test Study"
-description: "A post in the study category"
-category: study
+title: "Test research category"
+description: "A post in the research category"
+category: research
 tags: [test]
 ---
 

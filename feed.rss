@@ -1,0 +1,38 @@
+---
+layout: nil
+title : RSS Feed
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.title | xml_escape }}</title>
+    <description>{{ site.title | xml_escape }} - {{ site.author.name | xml_escape }}</description>
+    <link>{{ site.production_url }}</link>
+    <atom:link href="{{ site.production_url }}{{ site.rss_path }}" 
+               rel="self" type="application/rss+xml" />
+    <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z"}}</lastBuildDate>
+    <pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+    <ttl>1800</ttl>
+
+    {% for post in site.posts limit: 10 %}
+    <item>
+      <title>{{ post.title | xml_escape }}</title>
+      <author>
+        {% if post.author %}
+          {{ post.author.email }}
+          ({{ post.author.name | xml_escape }})
+        {% else %}
+          {{ site.author.email }}
+          ({{ site.author.name | xml_escape }})
+        {% endif %}
+      </author>
+      <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+      <link>{{ site.production_url }}{{ post.url }}</link>
+      <guid>{{ site.production_url }}{{ post.id }}</guid>
+      <description>{{ post.content | xml_escape }}</description>
+    </item>
+    {% endfor %}
+
+  </channel>
+</rss>
