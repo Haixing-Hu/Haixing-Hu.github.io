@@ -10,7 +10,7 @@
 </script>
 
 <div class="fb-like inline" 
-     data-href="{{ site.production_url }}/{{ BASE_PATH }}{{ page.url }}" 
+     data-href="{{ site.production_url }}{{ BASE_PATH }}{{ page.url }}" 
      {% unless site.JB.sharing.facebook.layout == empty %}
      data-layout="{{ site.JB.sharing.facebook.layout }}" 
      {% endunless %}
