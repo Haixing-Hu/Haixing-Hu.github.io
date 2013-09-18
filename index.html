@@ -5,7 +5,7 @@ title: Home
 {% include JB/setup %}
 
 <div class="page-header">
-  {% include contact.html %}
+  {% include custom/contact %}
   <h1>
     {{ site.author.name }}
     {% if site.tagline %}<br/><small>{{ site.tagline }}</small>{% endif %}
@@ -18,7 +18,7 @@ title: Home
   <div class="post">
       <a href="{{ post.url }}"><h3 class="title">{{ post.title }}</h3></a>
       {% assign this_post = post %}
-      {% include post-info.html %}
+      {% include custom/post-info %}
       <div class="content">
         {{ post.excerpt | markdownify }}
       </div>

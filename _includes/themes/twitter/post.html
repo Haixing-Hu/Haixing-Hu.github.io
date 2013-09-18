@@ -8,24 +8,30 @@
 <div class="row-fluid post-full">
   <div class="span12">
     {% assign this_post = page %}
-    {% include post-info.html %}
+    {% include custom/post-info %}
     <div class="content">
       {{ content }}
     </div>
-  {% unless page.categories == empty %}
-    <ul class="tag_box inline">
-      <li><i class="icon-folder-open"></i></li>
-      {% assign categories_list = page.categories %}
-      {% include JB/categories_list %}
-    </ul>
-  {% endunless %}  
-  {% unless page.tags == empty %}
-    <ul class="tag_box inline">
-      <li><i class="icon-tags"></i></li>
-      {% assign tags_list = page.tags %}
-      {% include JB/tags_list %}
-    </ul>
-  {% endunless %}  
+    <div class="sharing float-right">
+    {% include JB/sharing %}
+    </div>
+    <br/>
+    <div class="tag_box">
+      {% unless page.categories == empty %}
+      <ul class="tag_box inline">
+        <li><i class="icon-folder-open"></i></li>
+        {% assign categories_list = page.categories %}
+        {% include JB/categories_list %}
+      </ul>
+      {% endunless %}  
+      {% unless page.tags == empty %}
+      <ul class="tag_box inline">
+        <li><i class="icon-tags"></i></li>
+        {% assign tags_list = page.tags %}
+        {% include JB/tags_list %}
+      </ul>
+      {% endunless %}  
+    </div>     
     <hr/>
     <div class="pagination">
       <ul>

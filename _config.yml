@@ -137,13 +137,37 @@ JB :
     #     baseURL : 'myserver.tld/piwik' # Piwik installation address (without protocol)
     #     idsite : '1'                   # the id of the site on Piwik
 
-  # Settings for sharing helper. 
-  # Sharing is for things like tweet, plusone, like, reddit buttons etc.
+
+  # Settings for sharing 
+  # Sharing is for things like google plus, facebook, twitter, linkedin, etc.
+  # Add a google plus one button 	  => provider : googleplus
+  # Add a facebook like button        => provider : facebook
+  # Add a twitter button              => provider : twitter
+  # Add a linkedin button             => provider : linkedin
   # Set 'provider' to the sharing provider you want to use.
   # Set 'provider' to false to turn sharing off globally.
+  # Set 'provider' to an array of sharing providers if you want to use more than one 
+  # Set the post's 'sharing' metadata to 'false' to turn sharing off for the page
+  #
+  # NOTE: in order to make the buttons aligned in the same line, it's better to
+  # put the 'facebook' at the frist and put the 'googleplus' at the last.
   #
   sharing :
-    provider : false
+     provider : [facebook, googleplus]
+     facebook :
+       layout : button_count
+       faces : false
+       width : 90
+     googleplus :
+       annotation : bubble
+       size : medium
+       width : 20
+     twitter :
+       size :
+       via :
+       count :
+     linkedin :
+       counter : right      
     
   # Settings for all other include helpers can be defined by creating 
   # a hash with key named for the given helper. ex:

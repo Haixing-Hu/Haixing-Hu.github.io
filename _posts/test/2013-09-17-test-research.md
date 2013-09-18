@@ -3,7 +3,7 @@ layout: post
 title: "Test research category"
 description: "A post in the research category"
 category: research
-tags: [test]
+tags: [test, quantum computation, algorithm]
 ---
 
 
