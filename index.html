@@ -2,10 +2,11 @@
 layout: default
 title: Home
 ---
-{% include JB/setup %}
 
 <div class="page-header">
-  {% include custom/contact %}
+  <div class="float-right">
+    {% include contact_icons %}
+  </div>
   <h1>
     {{ site.author.name }}
     {% if site.tagline %}<br/><small>{{ site.tagline }}</small>{% endif %}
@@ -14,23 +15,26 @@ title: Home
 
 <!-- recent posts -->
 <div class="recent-posts">
-  {% for post in paginator.posts %}    
+  {% for this_post in paginator.posts %}    
   <div class="post">
-      <a href="{{ post.url }}"><h3 class="title">{{ post.title }}</h3></a>
-      {% assign this_post = post %}
-      {% include custom/post-info %}
-      <div class="content">
-        {{ post.excerpt | markdownify }}
+      <a href="{{ this_post.url }}">
+        <h4 class="post-title">{{ this_post.title }}</h4>
+      </a>      
+      {% include category_info %}
+      {% include source_info %}
+      <div class="post-content">
+        {{ this_post.excerpt | markdownify }}
       </div>
-      <div class="read-more">
-        <a href="{{ post.url }}">more ...</a>
+      <script type="text/javascript" src="/assets/js/fix_table_style.js"></script>
+      <div class="align-right">
+        <a href="{{ this_post.url }}">more ...</a>
       </div>
   </div>
   {% endfor %}
 </div>
 
 <!-- pagination links -->
-<div class="pagination">
+<div class="pagination align-center">
   <ul>
     {% if paginator.next_page %}
     <li class="prev">

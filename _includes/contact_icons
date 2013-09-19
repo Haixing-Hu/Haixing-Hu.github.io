@@ -1,5 +1,19 @@
-<!-- the contact information -->
-<ul class="inline float-right">
+{% comment %}<!--
+The `contact_icons` generate the icons about the contat information of the 
+author of the site.
+
+Usage:
+  1. include `contact_icons`
+
+Example:
+  
+  <div class="float-right">
+    {% include contact_icons %}
+  </div>
+
+-->{% endcomment %}
+
+<ul class="unstyled inline">
   {% if site.author.github %}
   <li>
     <a target="_blank"

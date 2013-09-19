@@ -1,4 +1,27 @@
-<!-- the footer of a page -->
+{% comment %}<!--
+The `footer` generate the footer of a page.
+
+Usage:
+  1. include `footer`
+
+Example:
+  
+  <!DOCTYPE html>
+  <html>
+    <head>
+      {% include html_meta %}
+      ...
+      {% include mathjax_support %}
+    </head>
+    <body>
+      {% include navigation_bar %}
+      ...
+      {% include footer %}
+    </body>
+  </html>
+
+-->{% endcomment %}
+
 <footer style='text-align:center;'>
   <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
     with help from <a href="http://jekyllbootstrap.com" 

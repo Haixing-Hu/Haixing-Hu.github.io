@@ -1,6 +1,26 @@
-<!-- the meta data in the <head>..</head> of an HTML page -->
+{% comment %}<!--
+The `html_meta` generate the meta data for a HTML page. It must be used in the
+`<head>..</head>` part of a HTML page.
+
+Usage:
+  1. include `html_meta`
+
+Example:
+  
+  <!DOCTYPE html>
+  <html>
+    <head>
+      {% include html_meta %}
+      ...
+    </head>
+    <body>
+      ...
+    </body>
+  </html>
+
+-->{% endcomment %}
+
 <meta charset="utf-8">
-<title>{{ page.title }} -- {{ site.title }}</title>
 <meta name="author" content="{{ site.author.name }}">
 {% if page.description %}
 <meta name="description" content="{{ page.description }}">
@@ -23,10 +43,3 @@
 
 <!-- Le fav and touch icons -->
 <link rel="shortcut icon" href="/assets/img/favicon.ico">
-<!-- Update these with your own images
-  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
--->
-
-{% include custom/mathjax %}

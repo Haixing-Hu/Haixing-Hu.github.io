@@ -1,0 +1,40 @@
+{% comment %}<!--
+The `mathjax_support` add the support for the MathJax. It must be used in the
+`<head>..</head>` part of a HTML page.
+
+With the MathJax support, you can use the LaTeX syntax to typeset mathematical
+formula in your post:
+ - Use `$...$` for inline formula.
+ - Use `\[ ... \]` for display formula.
+ - Use `\$` to escape a dollar symbol.
+
+Usage:
+  1. include `mathjax_support`
+
+Example:
+  
+  <!DOCTYPE html>
+  <html>
+    <head>
+      {% include html_meta %}
+      ...
+      {% include mathjax_support %}
+    </head>
+    <body>
+      ...
+    </body>
+  </html>
+
+-->{% endcomment %}
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script type="text/javascript" 
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+</script>

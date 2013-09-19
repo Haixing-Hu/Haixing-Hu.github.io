@@ -1,6 +1,22 @@
----
-theme :
-  name : twitter
----
 {% include JB/setup %}
-{% include themes/twitter/default.html %}
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include html_meta %}
+    <title>{{ page.title }} -- {{ site.title }}</title>
+    <link href="/assets/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
+    <link href="/assets/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    {% include mathjax_support %}    
+  </head>
+  <body>
+    {% include navigation_bar %}
+    <div class="container-narrow">
+      <div class="content">
+        {{ content }}
+      </div>
+      <hr/>
+      {% include footer %}
+    </div>
+    {% include JB/analytics %}
+  </body>
+</html>
