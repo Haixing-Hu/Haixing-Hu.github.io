@@ -17,7 +17,7 @@ prevent Spotlight index service from indexing the drives on your machine, thus
 meaning it will return no results when used.  To switch off the indexing open a
 Terminal window and type:
 
-	1sudo mdutil -a -i off
+	sudo mdutil -a -i off
 
 **NB:** You will be prompted to enter your admin password.
 
@@ -26,6 +26,6 @@ then it’s just as easy to switch back on as it was to switch off.
 
 Again, in a terminal window type the following:
 
-	1sudo mdutil -a -i on
+	sudo mdutil -a -i on
 
 **NB:** You will be prompted to enter your admin password.
