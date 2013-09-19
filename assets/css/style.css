@@ -116,3 +116,18 @@ img.cc-logo {
   color: #999;
   font-style: italic;
 }
+h1 code, pre {
+  font-size: inherit;
+}
+h2 code, pre {
+  font-size: inherit;
+}
+h3 code, pre {
+  font-size: inherit;
+}
+h4 code, pre {
+  font-size: inherit;
+}
+h5 code, pre {
+  font-size: inherit;
+}

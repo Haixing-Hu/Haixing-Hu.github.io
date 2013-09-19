@@ -4,7 +4,7 @@ title: "Disable spotlight indexing on OS X Lion or Mountain Lion"
 author: Mike Hudson
 source_url: http://www.mikesel.info/disable-spotlight/
 category: computer
-tags: [mac, osx, spotlight]
+tags: [software, Mac OS X]
 ---
 
 Mac OS X Spotlight search is a powerful beast, returning all types of search

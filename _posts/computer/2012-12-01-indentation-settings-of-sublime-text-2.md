@@ -6,7 +6,7 @@ source_url: http://www.sublimetext.com/docs/2/indentation.html
 tagline: ""
 description: ""
 category: computer
-tags: [editor, sublime text]
+tags: [software, editor, sublime text]
 ---
 
 Indentation Settings determine the size of the tab stops, and control whether

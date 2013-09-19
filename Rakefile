@@ -40,11 +40,16 @@ module JB
   end #Path
 end #JB
 
-# Usage: rake post title="A Title" [date="2012-02-09"] [category="category"] [tags=[tag1, tag2]]
+# Usage: rake post title="A Title" [tagline="tagline"] [date="2012-02-09"]
+# [category="category"] [tags=[tag1, tag2]]  [authro="author name"]
+# [source_url="http://www.example.com/example.html"]
 desc "Begin a new post in #{CONFIG['posts']}"
 task :post do
   abort("rake aborted: '#{CONFIG['posts']}' directory not found.") unless FileTest.directory?(CONFIG['posts'])
   title = ENV["title"] || "new-post"
+  tagline = ENV["tagline"] || ""
+  author = ENV["author"] || ""
+  source_url = ENV["source_url"] || ""
   category = ENV["category"] || "misc"
   tags = ENV["tags"] || "[]"
   slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
@@ -69,9 +74,10 @@ task :post do
   open(filename, 'w') do |post|
     post.puts "---"
     post.puts "layout: post"
-    post.puts "title: \"#{title.gsub(/-/,' ')}\""
-    post.puts "tagline: \"\""
-    post.puts "description: \"\""
+    post.puts "title: \"#{title.gsub(/-/,' ')}\""    
+    post.puts "tagline: \"#{tagline}\"" unless tagline == ""
+    post.puts "author: #{author}" unless author == ""    
+    post.puts "source_url: #{source_url}" unless source_url == ""    
     post.puts "category: #{category}"
     post.puts "tags: #{tags}"
     post.puts "---"

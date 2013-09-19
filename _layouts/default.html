@@ -6,7 +6,9 @@
     <title>{{ page.title }} -- {{ site.title }}</title>
     <link href="/assets/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
     <link href="/assets/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
-    {% include mathjax_support %}    
+    {% if page.use_math %}
+      {% include mathjax_support %}
+    {% endif %}
   </head>
   <body>
     {% include navigation_bar %}
