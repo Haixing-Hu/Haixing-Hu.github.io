@@ -24,7 +24,7 @@ use_math: true
       {% include category_info %}
       {% include source_info %}
       <div class="post-content">
-        {{ this_post.excerpt | markdownify }}
+        {{ this_post.excerpt | escape | markdownify }}
       </div>
       <script type="text/javascript" src="/assets/js/fix_table_style.js"></script>
       <div class="align-right">
