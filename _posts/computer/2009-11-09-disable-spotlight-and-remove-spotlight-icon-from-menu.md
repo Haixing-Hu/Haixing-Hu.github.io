@@ -8,7 +8,9 @@ tags: [software, Mac OS X]
 ---
 
 To turn Spotlight Indexing off and on in Mac OS X 10.6 Snow Leopard, and to
-remove the Menu Bar Icon, follow these steps...
+remove the Menu Bar Icon, follow these steps.
+
+<!--more-->
 
 To turn Spotlight Indexing off in open Terminal and run this command:
 

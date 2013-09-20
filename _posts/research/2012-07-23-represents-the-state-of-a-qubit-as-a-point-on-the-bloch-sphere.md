@@ -18,6 +18,8 @@ but the inference procedure was not given. Here we try to infer it.
 
 [1]: http://plato.stanford.edu/entries/qt-quantcomp/Blochsphere.png "The Bloch Sphere"
 
+<!--more-->
+
 Let $z=x+iy$ be a complex number, where $x$ and $y$ are real numbers, and
 $i$ is the imaginary unit. Let
 $$
@@ -33,14 +35,14 @@ $$
   z=r(\cos\theta + i\sin\theta).
 $$
 
-According to the Euler's formula $e^{i\theta}=\cos\theta + i\sin\theta$, we have 
+According to the Euler's formula $e^{i\theta}=\cos\theta + i\sin\theta$, we have
 \begin{equation}\label{eq_complex}
   z=re^{i\theta}$.
 \end{equation}
 
-Suppose the state of a qubit is represented as 
+Suppose the state of a qubit is represented as
 $|\psi\rangle=\alpha|0\rangle + \beta|1\rangle$,
-where $\alpha$ and $\beta$ are both complex numbers. According to 
+where $\alpha$ and $\beta$ are both complex numbers. According to
 \eqref{eq_complex}, $\alpha$ and $\beta$ could be rewritten as
 \begin{align\*}
     \alpha &= r_{\alpha}e^{i\theta_{\alpha}} \\\\
@@ -58,9 +60,9 @@ we have
                   &= r_{\alpha}|0\rangle + r_{\beta}e^{i(\theta_{\beta}-\theta_{\alpha})}|1\rangle \\\\
                   &= r_{\alpha}|0\rangle + r_{\beta}e^{i\theta}|1\rangle,
 \end{align\*}
-where $\theta = \theta_{\beta}-\theta_{\alpha}$. 
+where $\theta = \theta_{\beta}-\theta_{\alpha}$.
 
-Note that $\\|e^{-i\theta_{\alpha}}\\|^2 = 1$, it's easy to see that 
+Note that $\\|e^{-i\theta_{\alpha}}\\|^2 = 1$, it's easy to see that
 \begin{align\*}
     |\psi'\rangle &= e^{-i\theta_{\alpha}} |\psi\rangle \\\\
                   &= e^{-i\theta_{\alpha}}\alpha |0\rangle + e^{-i\theta_{\alpha}}\beta |1\rangle
@@ -74,13 +76,13 @@ Finally, since
 $$
   |\psi'\rangle = r_{\alpha}|0\rangle + r_{\beta}e^{i\theta}|1\rangle,
 $$
-and let $r_{\beta}e^{i\theta}=x+iy$, where $x$ and $y$ are both real 
+and let $r_{\beta}e^{i\theta}=x+iy$, where $x$ and $y$ are both real
 numbers, then
 \begin{equation}\label{eq_psi_prim}
   |\psi'\rangle = r_{\alpha}|0\rangle + (x+iy)|1\rangle.
 \end{equation}
 
-According to the normalization condition, we have $|r_{\alpha}|^2+|(x+iy)|^2=1$, 
+According to the normalization condition, we have $|r_{\alpha}|^2+|(x+iy)|^2=1$,
 that is,
 \begin{align\*}
     |r_{\alpha}|^2 + |(x+iy)|^2 &= r_{\alpha}^2 + (x+iy)(x-iy) \\\\
@@ -103,11 +105,11 @@ sphere could be represented as
 \begin{align\*}
      x          &= r \sin\theta\cos\varphi \\\\
      y          &= r \sin\theta\sin\varphi \\\\
-     r_{\alpha} &= r\cos\theta 
+     r_{\alpha} &= r\cos\theta
 \end{align\*}
 where $r=1$ is the radius of the unit sphere.
 
-Therefore, according to \eqref{eq_psi_prim}, the state of a qubit could be 
+Therefore, according to \eqref{eq_psi_prim}, the state of a qubit could be
 rewritten as
 \begin{align}
     |\psi'\rangle &= \cos\theta|0\rangle + (\sin\theta\cos\varphi + i\sin\theta\sin\varphi)|1\rangle \notag \\\\
@@ -118,13 +120,13 @@ rewritten as
 But wait, the formula \eqref{eq_psi_polar} slightly differs from the formula
 \eqref{eq_bloch}. We have to transform the $\theta$ to $\frac{\theta}{2}$.
 
-Suppose 
+Suppose
 \begin{equation}\label{eq_psi_sphere}
   |\psi\rangle = \cos\theta'|0\rangle + e^{i\varphi}\sin\theta'|1\rangle.
 \end{equation}
 Note that if $\theta'=0$ then $|\psi\rangle= |0\rangle$, and if
 $\theta'=\frac{\pi}{2}$ then $|\psi\rangle=e^{i\phi}|1\rangle$, which shows
-that if $0\leq\theta'\leq\frac{\pi}{2}$, \eqref{eq_psi_sphere} could represents 
+that if $0\leq\theta'\leq\frac{\pi}{2}$, \eqref{eq_psi_sphere} could represents
 any point on a Bloch sphere.
 
 Suppose the point corresponding to a qubit state $|\psi'\rangle$ is
@@ -144,7 +146,7 @@ on the upper half sphere correponding to a $\theta'$ satisfying
 $0\leq\theta'\leq\frac{\pi}{2}$.
 
 Finally we will map the points on the upper half sphere to the points on the whole
-sphere. Let $\theta=2\theta'$, i.e., $\theta'=\frac{\theta}{2}$, then we 
+sphere. Let $\theta=2\theta'$, i.e., $\theta'=\frac{\theta}{2}$, then we
 have
 \begin{equation}\label{eq_finally}
   |\psi\rangle = \cos\frac{\theta}{2}|0\rangle + e^{i\varphi}\sin\frac{\theta}{2}|1\rangle,

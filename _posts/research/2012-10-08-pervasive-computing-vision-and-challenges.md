@@ -7,9 +7,12 @@ tags: [reading notes, pervasive computing]
 ---
 
 This post is the reading notes of the following paper:
+
 Mahadev Satyanarayanan,
 *Pervasive Computing: Vision and Challenges*,
 IEEE Personal Communications, 8, 2001:10-17.
+
+<!--more-->
 
 ## Abstract
 
@@ -31,11 +34,11 @@ computing and is now well codified in textbooks [8, 19, 20]:
 - remote communication, including protocol layering, remote procedure call [3],
   the use of timeouts, and the use of end-to-end arguments in placement of
   functionality [28].
-- fault tolerance, including atomic transactions, distributed and nested 
+- fault tolerance, including atomic transactions, distributed and nested
   transactions, and two-phase commit [13].
-- high availability, including optimistic and pessimistic replica control [9], 
+- high availability, including optimistic and pessimistic replica control [9],
   mirrored execution [4], and optimistic recovery [37].
-- remote information access, including caching, function shipping, distributed 
+- remote information access, including caching, function shipping, distributed
   file systems, and distributed databases [30].
 - security, including encryption-based mutual authentication and privacy [23].
 
@@ -44,8 +47,8 @@ four key constraints of mobility forced the development of specialized
 techniques. These constraints are[31]:
 
 1. unpredictable variation in network quality
-2. lowered trust and robustness of mobile elements, 
-3. limitations on local resources imposed by weight and size constraints, 
+2. lowered trust and robustness of mobile elements,
+3. limitations on local resources imposed by weight and size constraints,
 4. and concern for battery power consumption.
 
 Mobile computing has the following borad areas:
@@ -68,7 +71,7 @@ that it becomes a ‘‘technology that disappears.’’
 
 ## BibTeX of the paper
 
-	@article{satyanarayanan2001pervasive,    
+	@article{satyanarayanan2001pervasive,
 		author = {Mahadev Satyanarayanan},
 	    title = {Pervasive Computing: Vision and Challenges},
     	journal = {IEEE Personal Communications},

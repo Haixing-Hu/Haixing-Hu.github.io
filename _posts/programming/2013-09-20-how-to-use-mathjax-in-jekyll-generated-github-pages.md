@@ -11,6 +11,8 @@ There are many solutions to support [MathJax](www.mathjax.org) in
 requirement. After spending a whole day to google the solution, at last I solve
 the problem. My solution is not perfect, but it works well for me.
 
+<!--more-->
+
 Suppose that you have correctly installed and configured the Jekyll for your
 site. If you don't know how to do that, goolge it by yourself. The following
 instructions will help you to use MathJax in Jekyll.

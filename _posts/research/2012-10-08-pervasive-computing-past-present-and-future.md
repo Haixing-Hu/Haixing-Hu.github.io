@@ -7,10 +7,13 @@ tags: [reading notes, pervasive computing]
 ---
 
 This post is the reading notes of the following paper:
-Stan Kurkovsky, 
+
+Stan Kurkovsky,
 *Pervasive computing: Past, present, and future*,
-The 5-th International Conference on Information and Communication 
+The 5-th International Conference on Information and Communication
 Technology (ICICT 2007), 2007: 65-71.
+
+<!--more-->
 
 ## Abstract
 
@@ -100,7 +103,7 @@ by anticipating the user’s reactions to relevant events [9].
 1. Pervasive computing systems need to anticipate the actions of the user and
    adjust themselves while maintaining a careful a balance between their
    proactivity and invisibility of the system.
-2. The ability of the system to adapt to changing factors in its environment is 
+2. The ability of the system to adapt to changing factors in its environment is
    another important consideration of preserving the system’s invisibility.
 
 3. Finally, pervasive computing infrastructure could dynamically notify the

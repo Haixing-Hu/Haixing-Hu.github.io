@@ -11,6 +11,8 @@ Mac OS X Spotlight search is a powerful beast, returning all types of search
 results in seconds. However, if you don’t use it to launch apps, or find files
 then it can take up precious CPU cycles for no good reason.
 
+<!--more-->
+
 As with all features such as this, if you don’t use it or use alternatives such
 as [QuickSilver](http://qsapp.com/index.php) then switch it off. Doing so will
 prevent Spotlight index service from indexing the drives on your machine, thus

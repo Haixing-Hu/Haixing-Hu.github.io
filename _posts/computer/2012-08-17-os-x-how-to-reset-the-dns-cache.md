@@ -11,7 +11,9 @@ For OS X Mountain Lion or Lion, use the following Terminal command to reset the
 DNS cache:
 
     sudo killall -HUP mDNSResponder
- 
+
+<!--more-->
+
 For Mac OS X v10.6, use the following Terminal command to reset the DNS cache:
 
     sudo dscacheutil -flushcache

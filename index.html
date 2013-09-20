@@ -16,15 +16,15 @@ use_math: true
 
 <!-- recent posts -->
 <div class="recent-posts">
-  {% for this_post in paginator.posts %}    
+  {% for this_post in paginator.posts %}
   <div class="post">
       <a href="{{ this_post.url }}">
-        <h4 class="post-title">{{ this_post.title }}</h4>
-      </a>      
+        <h2 class="post-title">{{ this_post.title }}</h2>
+      </a>
       {% include category_info %}
       {% include source_info %}
       <div class="post-content">
-        {{ this_post.excerpt | markdownify }}
+          {{ this_post.excerpt }}
       </div>
       <script type="text/javascript" src="/assets/js/fix_table_style.js"></script>
       <div class="align-right">
@@ -52,7 +52,7 @@ use_math: true
     {% if paginator.previous_page %}
     <li class="next">
       {% if paginator.previous_page == 1 %}
-      <a href="/">Newer &raquo;</a>          
+      <a href="/">Newer &raquo;</a>
       {% else %}
       <a href="{{ paginator.previous_page_path }}">Newer &raquo;</a>
       {% endif %}
@@ -64,4 +64,3 @@ use_math: true
     {% endif %}
   </ul>
 </div>
-

@@ -17,6 +17,8 @@ semi decent solutions, but ultimately gave up. After my failed attempts and
 failed googling, my coworker informed me that Sublime Text has this built right
 in as a user setting you can set by adding a simple JSON snippet. Awesome.
 
+<!--more-->
+
 ## Make it Happen
 
 Go to *SublimeText 2 > Preferences > User Settings* (or just hit the Mac

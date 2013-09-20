@@ -1,52 +1,52 @@
 /* Custom container */
 .container-narrow {
   margin: 0 auto;
-  max-width: 900px; 
+  max-width: 900px;
 }
 .container-narrow > hr {
-  margin: 30px 0; 
+  margin: 30px 0;
 }
 
 /* posts index */
 .post > h3.title {
   position: relative;
-  padding-top: 10px; 
+  padding-top: 10px;
 }
 
 .post > h3.title span.date {
   position: absolute;
   right: 0;
-  font-size: 0.9em; 
+  font-size: 0.9em;
 }
 
 .post > .more {
   margin: 10px 0;
-  text-align: left; 
+  text-align: left;
 }
 
 /* post-full*/
 .post-full .date {
   margin-bottom: 20px;
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 /* tag_box */
 .tag_box {
   list-style: none;
   margin: 0;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .tag_box li {
-  line-height: 28px; 
+  line-height: 28px;
 }
 
 .tag_box li i {
-  opacity: 0.9; 
+  opacity: 0.9;
 }
 
 .tag_box.inline li {
-  float: left; 
+  float: left;
 }
 
 .tag_box.inline li i.icon-folder-open {
@@ -60,23 +60,23 @@
   color: #555;
   border-radius: 3px;
   text-decoration: none;
-  border: 1px dashed #cccccc; 
+  border: 1px dashed #cccccc;
   vertical-align: top;
 }
 
 .tag_box li a span {
   vertical-align: super;
-  font-size: 0.8em; 
+  font-size: 0.8em;
 }
 
 .tag_box li a:hover {
-  background-color: #e5e5e5; 
+  background-color: #e5e5e5;
 }
 
 .tag_box li a.active {
   background: #57A957;
   border: 1px solid #4c964d;
-  color: #FFF; 
+  color: #FFF;
 }
 
 a.cc-logo {
@@ -122,11 +122,16 @@ h5 code, pre {
   font-size: inherit;
 }
 code.has-mathjax {
-  font: inherit; 
-  font-size: 100%; 
-  background: inherit; 
+  font: inherit;
+  font-size: 100%;
+  background: inherit;
   border: inherit;
   color: inherit;
   margin: inherit;
   padding: inherit;
+}
+img.align-center {
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
 }

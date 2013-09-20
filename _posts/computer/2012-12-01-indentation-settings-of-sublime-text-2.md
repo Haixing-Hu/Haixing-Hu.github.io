@@ -13,14 +13,16 @@ Indentation Settings determine the size of the tab stops, and control whether
 the tab key should insert tabs or spaces. In addition to the automatic
 detection, they can be customized globally, per-file type, or per-file.
 
+<!--more-->
+
 ## Settings
 
-variable | type | description 
+variable | type | description
 :---------|:-----|:------------
-`tab_size` | Integer | The number of spaces a tab is considered equal to 
-`translate_tabs_to_spaces` | Boolean | if true, spaces will be inserted up to the next tab stop when tab is pressed, rather than inserting a tab character 
-`detect_indentation` | Boolean | if true (the default), `tab_size` and `translate_tabs_to_spaces` will be calculated automatically when loading a file 
-`use_tab_stops` | Boolean | If `translate_tabs_to_spaces` is true, `use_tab_stops` will make tab and backspace insert/delete up to the next tab stop Settings Files 
+`tab_size` | Integer | The number of spaces a tab is considered equal to
+`translate_tabs_to_spaces` | Boolean | if true, spaces will be inserted up to the next tab stop when tab is pressed, rather than inserting a tab character
+`detect_indentation` | Boolean | if true (the default), `tab_size` and `translate_tabs_to_spaces` will be calculated automatically when loading a file
+`use_tab_stops` | Boolean | If `translate_tabs_to_spaces` is true, `use_tab_stops` will make tab and backspace insert/delete up to the next tab stop Settings Files
 
 Settings files are consulted in this order:
 
@@ -30,16 +32,16 @@ Settings files are consulted in this order:
   4. Packages/{syntax}/{syntax}.sublime-settings
   5. **Packages/User/{syntax}.sublime-settings**
 
-In general, you should place your settings in `Packages/User/Preferences.sublime-settings`. 
-If you want to specify settings for a certain file type, for example, Python, 
+In general, you should place your settings in `Packages/User/Preferences.sublime-settings`.
+If you want to specify settings for a certain file type, for example, Python,
 you should place them in `Packages/User/Python.sublime-settings`.
 
 ## Example Settings File
 
 Try saving this as `Packages/User/Preferences.sublime-settings`
 
-    { 
-      "tab_size": 4,    
+    {
+      "tab_size": 4,
       "translate_tabs_to_spaces": false
     }
 
@@ -70,9 +72,9 @@ and `unexpand_tabs` commands.
 Automatic indentation guesses the amount of leading whitespace to insert on
 each line when you press enter. It's controlled with these settings:
 
-variable | type | description 
+variable | type | description
 :---------|:-----|:------------
-`auto_indent` | Boolean | enabled by default. Enables auto indent 
+`auto_indent` | Boolean | enabled by default. Enables auto indent
 `smart_indent` | Boolean | enabled by default. Makes auto indent a little smarter, e.g., by indenting the next line after an if statement in C.
-`trim_automatic_white_space` | Boolean | enabled by default. Trims white space added by auto_indent when moving the caret off the line. 
+`trim_automatic_white_space` | Boolean | enabled by default. Trims white space added by auto_indent when moving the caret off the line.
 `indent_to_bracket` | Boolean | disabled by default. Adds whitespace up to the first open bracket when indenting.

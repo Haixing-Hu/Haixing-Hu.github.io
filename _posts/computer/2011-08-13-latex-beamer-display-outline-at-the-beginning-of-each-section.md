@@ -13,3 +13,5 @@ Use the following code snip
             \tableofcontents[currentsection,currentsubsection]
         \end{frame}
     }
+
+<!--more-->

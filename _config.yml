@@ -1,6 +1,7 @@
 # This is the default format.
 # For more see: http://jekyllrb.com/docs/permalinks/
 
+# markdown: kramdown
 markdown: maruku
 markdown_ext: markdown,mkd,mkdn,md
 permalink: /:categories/:year/:month/:day/:title
@@ -13,6 +14,8 @@ pygments: true
 paginate: 5
 paginate_path: "archive/page:num"
 
+# The separator for exceprt
+excerpt_separator: <!--more-->
 
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.

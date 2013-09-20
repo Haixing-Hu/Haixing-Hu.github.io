@@ -7,8 +7,12 @@ category: computer
 tags: [software, Mac OS X]
 ---
 
+Use the following commands to add user to a group:
+
     sudo dseditgroup -o edit -a usernametoadd -t user admin
     sudo dseditgroup -o edit -a usernametoadd -t user wheel
+
+<!--more-->
 
 It's also possible to do this with dscl, but to do it properly you need to both
 add the user's short name to the group's `GroupMembership` list, and add the

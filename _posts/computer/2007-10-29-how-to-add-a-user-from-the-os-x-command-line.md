@@ -13,9 +13,13 @@ efficiency gained from using the command line. So in the spirit of efficiency
 here are the steps necessary to add a user to your Mac OS X system all with our
 good friend, Terminal.app.
 
+<!--more-->
+
 These commands need to be run as either the root user or with the “sudo”
 command. For more information on the sudo command see the [sudo man
-page](http://developer.apple.com/documentation/Darwin/Reference/ManPages/man8/sudo.8.html).
+page][1].
+
+[1]: http://developer.apple.com/documentation/Darwin/Reference/ManPages/man8/sudo.8.html
 
 Create a new entry in the local (/) domain under the category /users.
 

@@ -13,6 +13,8 @@ accidentally changing or deleting important data that your Mac needs. You may
 occasionally need to view or edit one of these hidden files. To do so, you must
 first make it visible again.
 
+<!--more-->
+
 Accessing hidden files in Snow Leopard is a lot easier than in previous
 versions of OS X now that the ‘Open’ and ‘Save’ dialog boxes of any application
 can display hidden files and folders. What’s that you say? You don’t see an
@@ -26,11 +28,11 @@ folders to display in any ‘Open’ or ‘Save’ dialog box.
   2. Select ‘Open’ from the application’s File menu.
   3. An Open Dialog box will display.
   4. With the dialog box as the front-most window (you can click once in the
-     dialog box to make sure it’s in front), press the command, shift, and 
+     dialog box to make sure it’s in front), press the command, shift, and
      period keys at the same time.
-  5. The dialog box now will display any hidden files or folders within its 
+  5. The dialog box now will display any hidden files or folders within its
      list items.
-  6. You can toggle between the hidden files and folders being displayed by 
+  6. You can toggle between the hidden files and folders being displayed by
      pressing command, shift, period again.
 
 Once the hidden files and folders display in the dialog box, you can navigate
