@@ -38,12 +38,12 @@ Example:
           </li>
       	  {% endif %}
         {% endfor %}
-        {% if site.JB.atom_path %}
+        {% if site.JB.rss_path %}
         <li>
-          <a href="{{ site.JB.atom_path }}"  
+          <a href="{{ site.JB.rss_path }}"  
              rel="subscribe-rss" 
-             title="subscribe via ATOM feed">
-              <img src="/assets/img/rss.png" alt="atom"/>
+             title="subscribe via RSS feed">
+              <img src="/assets/img/rss.png" alt="rss"/>
           </a>
         </li>
         {% endif %}
