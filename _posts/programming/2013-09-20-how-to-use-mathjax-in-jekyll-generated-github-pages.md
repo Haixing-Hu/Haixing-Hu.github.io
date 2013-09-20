@@ -168,4 +168,4 @@ Here are some notes about the above example:
 6. If you found error while typeseting math formula, try to escape some special 
    characters.
     
-That's it. Have fun with math!
+OK, that's all. Have fun with math!

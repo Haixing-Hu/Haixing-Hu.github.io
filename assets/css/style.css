@@ -7,10 +7,6 @@
   margin: 30px 0; 
 }
 
-.navbar .nav {
-  float: right; 
-}
-
 /* posts index */
 .post > h3.title {
   position: relative;
@@ -93,12 +89,6 @@ img.cc-logo {
   height: 16px;
   width: auto;
   vertical-align: -3px;
-}
-.float-left {
-  float: left;
-}
-.float-right {
-  float: right;
 }
 .align-left {
   text-align: left;

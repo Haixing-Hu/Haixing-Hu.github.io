@@ -25,7 +25,7 @@ Example:
   <div class="navbar-inner">
     <div class="container-narrow">
       <a class="brand" href="{{ HOME_PATH }}">{{ site.author.name }}</a>
-      <ul class="nav">
+      <ul class="nav pull-right">
         {% for sec in site.sections %}
           {% capture sec_url %}/{{sec}}.html{% endcapture %}
           {% if page.url == sec_url or page.category == sec %}

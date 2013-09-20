@@ -14,8 +14,9 @@ Information*, it is said that the state of a qubit could be rewritten as
 \end{equation}
 but the inference procedure was not given. Here we try to infer it.
 
-![The Bloch Sphere][bloch_sphere]{: class="float-right"}
-[bloch_sphere]: http://plato.stanford.edu/entries/qt-quantcomp/Blochsphere.png "The Bloch Sphere"
+![The Bloch Sphere][1]{: class="pull-right"}
+
+[1]: http://plato.stanford.edu/entries/qt-quantcomp/Blochsphere.png "The Bloch Sphere"
 
 Let $z=x+iy$ be a complex number, where $x$ and $y$ are real numbers, and
 $i$ is the imaginary unit. Let
@@ -90,12 +91,12 @@ i.e.,
 \begin{equation}\label{eq_coordinate}
   r_{\alpha}^2 + x^2 + y^2 = 1,
 \end{equation}
-![Spherical Coordinates][spherical_coordinates]{: class="float-right"}
+![Spherical Coordinates][2]{: class="pull-right"}
 where $r_{\alpha}$, $x$ and $y$ are both real numbers. The equation
 \eqref{eq_coordinate} shows that $(x,y,r_{\alpha})$ is the coordinate of a
 point on the unit sphere of the three dimension space.
 
-[spherical_coordinates]: http://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/3D_Spherical.svg/240px-3D_Spherical.svg.png "Spherical Coordinates"
+[2]: http://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/3D_Spherical.svg/240px-3D_Spherical.svg.png "Spherical Coordinates"
 
 In the polar coordinate system, the point $(x,y,r_{\alpha})$ on the unit
 sphere could be represented as
