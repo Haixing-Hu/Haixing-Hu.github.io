@@ -14,11 +14,11 @@ Information*, it is said that the state of a qubit could be rewritten as
 \end{equation}
 but the inference procedure was not given. Here we try to infer it.
 
+<!--more-->
+
 ![The Bloch Sphere][1]{: class="pull-right"}
 
 [1]: http://plato.stanford.edu/entries/qt-quantcomp/Blochsphere.png "The Bloch Sphere"
-
-<!--more-->
 
 Let $z=x+iy$ be a complex number, where $x$ and $y$ are real numbers, and
 $i$ is the imaginary unit. Let
