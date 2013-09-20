@@ -40,23 +40,25 @@ Now we have to modify the page template to add the support of MathJax.
 Create a file named with `mathjax_support` in your `_include` directory as
 follows:
 
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        TeX: { 
-          equationNumbers: { 
-            autoNumber: "AMS" 
-          } 
-        },
-        tex2jax: {
-          inlineMath: [ ['$','$'], ['\(', '\)'] ],
-          displayMath: [ ['$$','$$'] ],
-          processEscapes: true,
-        }
-      });
-    </script>
-    <script type="text/javascript"
-            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
+{% highlight html %}
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'], ['\(', '\)'] ],
+      displayMath: [ ['$$','$$'] ],
+      processEscapes: true,
+    }
+  });
+</script>
+<script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+{% endhighlight %}
 
 Note that the above configuration enables the support of automatic equation
 numbering (the line around `autoNumber: "AMS"`). If you do not need equation
@@ -64,6 +66,7 @@ numbering, remove the corresponding codes.
 
 Next, modify the layout template of your pages like follows:
 
+{% highlight html %}
     <!DOCTYPE html>
     <html>
       <head>
@@ -87,6 +90,7 @@ Next, modify the layout template of your pages like follows:
         {% include JB/analytics %}
       </body>
     </html>
+{% endhighlight %}
 
 Note the lines around `include mathjax_support`, those lines include the
 file `mathjax_support` you just created in the `_include` directory, if the
@@ -113,7 +117,7 @@ For example, the following is a post using math:
     Now a inline math with special character: $|\psi\rangle$, $x'$, $x^\*$.
 
     Test a display math:
-    $$ 
+    $$
        |\psi_1\rangle = a|0\rangle + b|1\rangle
     $$
     Is it O.K.?
@@ -128,7 +132,7 @@ For example, the following is a post using math:
     $$
       \begin{align}
         |\psi_1\rangle &= a|0\rangle + b|1\rangle \\\\
-        |\psi_2\rangle &= c|0\rangle + d|1\rangle 
+        |\psi_2\rangle &= c|0\rangle + d|1\rangle
       \end{align}
     $$
     Is it O.K.?
@@ -137,7 +141,7 @@ For example, the following is a post using math:
     $$
       \begin{align\*}
         |\psi_1\rangle &= a|0\rangle + b|1\rangle \\\\
-        |\psi_2\rangle &= c|0\rangle + d|1\rangle 
+        |\psi_2\rangle &= c|0\rangle + d|1\rangle
       \end{align\*}
     $$
     Is it O.K.?
@@ -145,27 +149,27 @@ For example, the following is a post using math:
     Test a display math with equation number:
     \begin{align}
         |\psi_1\rangle &= a|0\rangle + b|1\rangle \\\\
-        |\psi_2\rangle &= c|0\rangle + d|1\rangle 
+        |\psi_2\rangle &= c|0\rangle + d|1\rangle
     \end{align}
     Is it O.K.?
 
     And test a display math without equaltion number:
     \begin{align\*}
         |\psi_1\rangle &= a|0\rangle + b|1\rangle \\\\
-        |\psi_2\rangle &= c|0\rangle + d|1\rangle 
+        |\psi_2\rangle &= c|0\rangle + d|1\rangle
     \end{align\*}
     Is it O.K.?
 
-Here are some notes about the above example:    
+Here are some notes about the above example:
 1. The inline formula is between `$ ... $`.
 2. The display formula is between `$$ ... $$`.
-3. You can use the math envrionment directly, for example, 
+3. You can use the math envrionment directly, for example,
    `\begin{equation}...\end{equation}` or `\begin{align}...\end{align}`.
 4. Whenever in the inline math or display math, the star character `'*'` **must**
    be escaped.
 5. In the multi-lines display math, the line break symbol double-backslash `'\\'` should
-   be escaped, i.e., use four backslash `'\\\\'`. 
-6. If you found error while typeseting math formula, try to escape some special 
+   be escaped, i.e., use four backslash `'\\\\'`.
+6. If you found error while typeseting math formula, try to escape some special
    characters.
-    
+
 OK, that's all. Have fun with math!
