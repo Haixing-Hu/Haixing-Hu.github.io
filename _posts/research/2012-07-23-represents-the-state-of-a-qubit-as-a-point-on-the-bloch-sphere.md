@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Represents the pure state of a qubit using a Bloch sphere"
+title: "Represents the state of a qubit as a point on the Bloch sphere"
 author: Haixing Hu
 category: research
 tags: [quantum computing, qubit, Bloch sphere]
