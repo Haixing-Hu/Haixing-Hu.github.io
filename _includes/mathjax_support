@@ -63,10 +63,8 @@ The following is an example post:
     },
     tex2jax: {
       inlineMath: [ ['$','$'], ['\(', '\)'] ],
-      displayMath: [ ['$$','$$'], ['\[','\]'] ],
-      skipTags: ["script", "noscript", "style", "textarea"],      
+      displayMath: [ ['$$','$$'] ],
       processEscapes: true,
-      processEnvironments: true
     }
   });
 </script>
