@@ -7,9 +7,10 @@ tags: [reading notes, pervasive computing]
 ---
 
 This post is the reading notes of the following paper:
-Stan Kurkovsky, *Pervasive computing: Past, present, and future*,
+Stan Kurkovsky, 
+*Pervasive computing: Past, present, and future*,
 The 5-th International Conference on Information and Communication 
-Technology: ICICT 2007, 2007: 65--71.
+Technology (ICICT 2007), 2007: 65-71.
 
 ## Abstract
 

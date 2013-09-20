@@ -8,7 +8,7 @@ layout: default
 {% include category_info %}
 {% include source_info %}
 <div class="post-content">
- {{ page.content | escape | markdownify }}
+ {{ page.content | markdownify }}
 </div>
 <script type="text/javascript" src="/assets/js/fix_table_style.js"></script>
 <div class="sharing align-right">

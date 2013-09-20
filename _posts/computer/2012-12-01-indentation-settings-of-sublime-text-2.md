@@ -25,10 +25,10 @@ variable | type | description
 Settings files are consulted in this order:
 
   1. Packages/Default/Preferences.sublime-settings
-  2. Packages/Default/Preferences (<platform>).sublime-settings
+  2. Packages/Default/Preferences ({platform}).sublime-settings
   3. **Packages/User/Preferences.sublime-settings**
-  4. Packages/<syntax>/<syntax>.sublime-settings
-  5. **Packages/User/<syntax>.sublime-settings**
+  4. Packages/{syntax}/{syntax}.sublime-settings
+  5. **Packages/User/{syntax}.sublime-settings**
 
 In general, you should place your settings in `Packages/User/Preferences.sublime-settings`. 
 If you want to specify settings for a certain file type, for example, Python, 

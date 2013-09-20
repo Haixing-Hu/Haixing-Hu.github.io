@@ -6,6 +6,7 @@ require 'time'
 SOURCE = "."
 CONFIG = {
   'version' => "0.3.0",
+  'author' => "Haixing Hu",
   'themes' => File.join(SOURCE, "_includes", "themes"),
   'layouts' => File.join(SOURCE, "_layouts"),
   'posts' => File.join(SOURCE, "_posts"),
@@ -48,7 +49,7 @@ task :post do
   abort("rake aborted: '#{CONFIG['posts']}' directory not found.") unless FileTest.directory?(CONFIG['posts'])
   title = ENV["title"] || "new-post"
   tagline = ENV["tagline"] || ""
-  author = ENV["author"] || ""
+  author = ENV["author"] || CONFIG['author']
   source_url = ENV["source_url"] || ""
   category = ENV["category"] || "misc"
   tags = ENV["tags"] || "[]"
