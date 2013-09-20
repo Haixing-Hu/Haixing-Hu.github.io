@@ -2,13 +2,12 @@
 # For more see: http://jekyllrb.com/docs/permalinks/
 
 markdown: maruku
-# markdown: redcarpet
 markdown_ext: markdown,mkd,mkdn,md
 permalink: /:categories/:year/:month/:day/:title 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 
 # set pygments to true in order to support syntax highlight
-pygments: true
+# pygments: true
 
 # support the pagination
 paginate: 5
