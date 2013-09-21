@@ -4,9 +4,18 @@
   <head>
     {% include html_meta %}
     <title>{{ page.title }} -- {{ site.title }}</title>
+    <!-- include the bootstap style sheet -->
     <link href="/assets/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
-    <link href="/assets/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <!-- include the syntax highlight style sheet -->
     <link href="/assets/css/syntax.css" rel="stylesheet" type="text/css" media="all">
+    <!-- include the customized style sheet -->
+    <link href="/assets/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <!--
+         include the argument.js in order to enables use of modern JavaScript
+         by augmenting built in objects with the latest JavaScript methods.
+    -->
+    <script type="text/javascript" src="/assets/js/argument.min.js"></script>
+
     {% if page.use_math %}
       {% include mathjax_support %}
     {% endif %}
