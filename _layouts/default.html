@@ -1,6 +1,6 @@
 {% include JB/setup %}
 <!DOCTYPE html>
-<html>
+<html {% if page.lang %}lang = "{{ page.lang }}"{% endif %}>
   <head>
     {% include html_meta %}
     <title>{{ page.title }} -- {{ site.title }}</title>
@@ -9,6 +9,11 @@
     <link href="/assets/css/syntax.css" rel="stylesheet" type="text/css" media="all">
     {% if page.use_math %}
       {% include mathjax_support %}
+    {% endif %}
+    {% if page.style %}
+    <style type="text/css">
+      {{ page.style }}
+    </style>
     {% endif %}
   </head>
   <body>

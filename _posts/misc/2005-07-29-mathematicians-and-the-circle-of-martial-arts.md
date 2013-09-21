@@ -5,6 +5,8 @@ author: 怪客
 source_url: http://zhiqiang.org/blog/science/mathematics-in-wulin-story-author-falcons.html
 category: misc
 tags: [legend, mathematician]
+lang: zh
+style: "h3, h4 {text-align: center;}"
 ---
 
 ### 1. 黄教授
