@@ -1,10 +1,9 @@
 /**
  *  A javascript used to add css for tables generated from the markdown
  */
-function fix_table_style() {
-    var divs = document.getElementsByTagName("div");
-    for (var i = 0; i < divs.length; ++i) {
-        var div = divs[i];
+function fix_table_style(els) {
+    for (var i in els) {
+        var div = els[i];
         if (div.className == "post-content") {
             var tables = div.getElementsByTagName("table");
             for (var j = 0; j < tables.length; ++j) {
@@ -14,10 +13,3 @@ function fix_table_style() {
         }
     }
 }
-
-/**
- * Perform the initialization when DOM is ready.
- */
-domready(function () {
-    fix_table_style();
-});
