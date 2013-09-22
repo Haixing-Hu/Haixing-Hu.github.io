@@ -47,8 +47,39 @@ license:
     - /img/nc.png
     - /img/sa.png
 
-# since the `categoreis` is predefined collection of `site`, we have to use
-# another name for the following property
+# Configurations for the menu items of the navigation bar
+menuitems:
+    - { title:    Research, 
+        category: research,
+        url:      /research.html }
+    - { title:    Programming, 
+        category: programming,
+        url:      /programming.html }
+    - { title:    Computer, 
+        category: computer,
+        url:      /computer.html }
+    - { title:    Life, 
+        category: life,
+        url:      /life.html }
+    - { title:    Misc, 
+        category: misc,
+        url:      /misc.html }
+    - { title:    Archive, 
+        url:      /archive.html }
+    - { title:    Tags, 
+        url:      /tags.html }
+    - { title:    About,
+        category: about,
+        dropdown: true,
+        subitems: [ { title: "Curriculum Vitae",
+                      url:   "/about/cv.html" },
+                    { title: "Publications",
+                      url:   "/about/publications.html" },
+                    { title: "Projects",
+                      url:   "/about/projects.html" },
+                    { title: "Teaching",
+                      url:   "/about/teaching.html" } ] }
+
 sections:
     - research
     - programming
@@ -57,7 +88,6 @@ sections:
     - misc
     - archive
     - tags
-    - about
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt

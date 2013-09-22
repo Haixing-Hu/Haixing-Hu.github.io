@@ -24,11 +24,21 @@
     </style>
     {% endif %}
 
+    <!-- jquery -->
+    <script type="text/javascript"
+            src="/bower_components/jqueryjs/jquery.js"></script>
+    <!-- bootstrap -->
+    <script type="text/javascript"
+            src="/bower_components/bootstrap-css/js/bootstrap.min.js"></script>
+
     <!-- handle the DOM ready event, compatible with different browsers. -->
     <script type="text/javascript"
             src="/bower_components/domready/ready.min.js"></script>
+    <!-- support the extended regular expression -->
     <script type="text/javascript"
             src="/bower_components/xregexp/min/xregexp-all-min.js"></script>
+    <!-- fix the extra spaces between CJK characters introduced by the line
+         break in the source -->
     <script type="text/javascript"
             src="/bower_components/fix-cjk-linebreak/fix-cjk-linebreak.js"></script>
 
@@ -36,24 +46,18 @@
     {% if page.use_math %}
       {% include mathjax_support %}
     {% endif %}
+
     <!-- other customied scripts -->
     <script type="text/javascript"
             src="/js/customize.js"></script>
 
   </head>
   <body>
-    {% include navigation_bar %}
+    {% include nav_bar %}
     <div class="container-narrow">
-      <div id="content">
+      <div class="content">
         {{ content }}
       </div>
-      <script type="text/javascript">
-        var el = document.getElementById("content");
-        console.log("start fix_cjk_linebreak");
-        fix_cjk_linebreak(el);
-        console.log("start fix_table_style");
-        fix_table_style(el);
-      </script>
       <hr/>
       {% include footer %}
     </div>

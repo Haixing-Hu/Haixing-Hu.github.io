@@ -10,9 +10,14 @@ layout: default
   {% include category_info %}
   {% include source_info %}
 </div>
-<div class="post-content">
+<div id="post-content" class="post-content">
    {{ content }}
 </div>
+<script type="text/javascript">
+  var el = document.getElementById("post-content");
+  fix_cjk_linebreak(el);
+  fix_table_style(el);
+</script>
 <div class="sharing align-right">
   {% include JB/sharing %}
 </div>

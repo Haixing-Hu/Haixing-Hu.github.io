@@ -16,7 +16,7 @@ lang: zh
 </div>
 
 <!-- recent posts -->
-<div class="recent-posts">
+<div id="recent-posts" class="recent-posts">
   {% for this_post in paginator.posts %}
   <div class="post">
       <a href="{{ this_post.url }}">
@@ -33,6 +33,11 @@ lang: zh
   </div>
   {% endfor %}
 </div>
+<script type="text/javascript">
+  var el = document.getElementById("recent-posts");
+  fix_cjk_linebreak(el);
+  fix_table_style(el);
+</script>
 
 <!-- pagination links -->
 <div class="pagination align-center">
