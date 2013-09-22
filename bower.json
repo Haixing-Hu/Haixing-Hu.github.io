@@ -34,6 +34,6 @@
     "html5shiv-dist": "*",
     "jqueryjs": "*",
     "lunr.js": "*",
-    "normalize-css": "*",
+    "normalize-css": "*"
   }
 }
