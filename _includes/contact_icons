@@ -1,12 +1,12 @@
 {% comment %}<!--
-The `contact_icons` generate the icons about the contat information of the 
+The `contact_icons` generate the icons about the contat information of the
 author of the site.
 
 Usage:
   1. include `contact_icons`
 
 Example:
-  
+
   <div class="pull-right">
     {% include contact_icons %}
   </div>
@@ -19,7 +19,7 @@ Example:
     <a target="_blank"
        title="visit my github repository"
        href="https://github.com/{{site.author.github}}">
-      <img src="/assets/img/github.png"/>
+      <img src="/img/github.png"/>
     </a>
   </li>
   {% endif %}
@@ -29,37 +29,37 @@ Example:
     <a target="_blank"
        title="follow me at Weibo"
        href="http://weibo.com/u/{{site.author.weibo}}">
-      <img src="/assets/img/weibo.png"/>
+      <img src="/img/weibo.png"/>
     </a>
   </li>
-  {% endif %} 
+  {% endif %}
 
   {% if site.author.twitter %}
   <li>
     <a target="_blank"
        title="follow me at Twitter"
        href="https://twitter.com/{{site.author.twitter}}">
-      <img src="/assets/img/twitter.png"/>
+      <img src="/img/twitter.png"/>
     </a>
   </li>
-  {% endif %}   
+  {% endif %}
 
   {% if site.author.facebook %}
   <li>
     <a target="_blank"
        title="visit my page at Facebook"
        href="http://www.facebook.com/{{site.author.facebook}}">
-      <img src="/assets/img/facebook.png"/>
+      <img src="/img/facebook.png"/>
     </a>
   </li>
-  {% endif %}  
+  {% endif %}
 
   {% if site.author.linkedin %}
   <li>
-    <a target="_blank" 
+    <a target="_blank"
        title="view my profile at Linkedin"
        href="http://cn.linkedin.com/in/{{site.author.linkedin}}">
-      <img src="/assets/img/linkedin.png"/>
+      <img src="/img/linkedin.png"/>
     </a>
   </li>
   {% endif %}

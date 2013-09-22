@@ -5,7 +5,7 @@ Usage:
   1. include `footer`
 
 Example:
-  
+
   <!DOCTYPE html>
   <html>
     <head>
@@ -22,22 +22,22 @@ Example:
 
 -->{% endcomment %}
 
-<footer style='text-align:center;'>
+<div style='text-align:center;'>
   <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
-    with help from <a href="http://jekyllbootstrap.com" 
-                      target="_blank" 
+    with help from <a href="http://jekyllbootstrap.com"
+                      target="_blank"
                       title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-    and <a href="http://twitter.github.com/bootstrap/" 
+    and <a href="http://twitter.github.com/bootstrap/"
            target="_blank">Twitter Bootstrap</a>
     <br/>
     <a rel="license" class="cc-logo" target="_blank" href="{{ site.license.url }}">
       {% for img in site.license.img %}
       <img class="cc-logo" src="{{ img }}">
-      {% endfor %} 
-    </a>  
-    This work is licensed under a 
+      {% endfor %}
+    </a>
+    This work is licensed under a
     <a rel="license" target="_blank" href="{{ site.license.url }}">
       Creative Commons License
     </a>
   </p>
-</footer>
+</div>

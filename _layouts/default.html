@@ -4,26 +4,37 @@
   <head>
     {% include html_meta %}
     <title>{{ page.title }} -- {{ site.title }}</title>
-    <!-- include the bootstap style sheet -->
-    <link href="/assets/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
-    <!-- include the syntax highlight style sheet -->
-    <link href="/assets/css/syntax.css" rel="stylesheet" type="text/css" media="all">
-    <!-- include the customized style sheet -->
-    <link href="/assets/css/style.css" rel="stylesheet" type="text/css" media="all">
-    <!--
-         include the argument.js in order to enables use of modern JavaScript
-         by augmenting built in objects with the latest JavaScript methods.
-    -->
-    <script type="text/javascript" src="/assets/js/argument.min.js"></script>
 
-    {% if page.use_math %}
-      {% include mathjax_support %}
-    {% endif %}
+    <!-- normalize.css -->
+    <link rel="stylesheet" type="text/css" media="all"
+          href="/bower_components/normalize-css/normalize.css" >
+    <!-- include the bootstap style sheet -->
+    <link rel="stylesheet"  type="text/css"
+          href="/bower_components/bootstrap-css/css/bootstrap.min.css">
+    <!-- include the syntax highlight style sheet -->
+    <link rel="stylesheet" type="text/css" media="all"
+          href="/css/syntax.css" >
+    <!-- include the customized style sheet -->
+    <link rel="stylesheet" type="text/css" media="all"
+          href="/css/customize.css">
+    <!-- add the page specified style sheet settings -->
     {% if page.style %}
     <style type="text/css">
       {{ page.style }}
     </style>
     {% endif %}
+
+    <!-- handle the DOM ready event, compatible with different browsers. -->
+    <script type="text/javascript"
+            src="/bower_components/domready/ready.min.js"></script>
+    <!-- support the MathJax if necessary -->
+    {% if page.use_math %}
+      {% include mathjax_support %}
+    {% endif %}
+    <!-- other customied scripts -->
+    <script type="text/javascript"
+            src="/js/customize.js"></script>
+
   </head>
   <body>
     {% include navigation_bar %}

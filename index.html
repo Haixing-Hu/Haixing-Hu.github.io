@@ -26,7 +26,6 @@ use_math: true
       <div class="post-content">
           {{ this_post.excerpt }}
       </div>
-      <script type="text/javascript" src="/assets/js/fix_table_style.js"></script>
       <div class="align-right">
         <a href="{{ this_post.url }}">more ...</a>
       </div>
@@ -36,7 +35,7 @@ use_math: true
 
 <!-- pagination links -->
 <div class="pagination align-center">
-  <ul>
+  <ul class="pagination">
     {% if paginator.next_page %}
     <li class="prev">
       <a href="{{ paginator.next_page_path }}">&laquo; Older</a>

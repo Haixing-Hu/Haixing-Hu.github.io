@@ -1,3 +1,6 @@
+/**
+ *  A javascript used to add css for tables generated from the markdown
+ */
 function fix_table_style() {
     var divs = document.getElementsByTagName("div");
     for (var i = 0; i < divs.length; ++i) {
@@ -9,6 +12,12 @@ function fix_table_style() {
                 tb.className = "table table-bordered";
             }
         }
-    }  
+    }
 }
-fix_table_style();
+
+/**
+ * Perform the initialization when DOM is ready.
+ */
+domready(function () {
+    fix_table_style();
+});

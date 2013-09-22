@@ -75,8 +75,8 @@ Next, modify the layout template of your pages like follows:
   <head>
     {%raw%}{% include html_meta %}{%endraw%}
     <title>{{ page.title }} -- {{ site.title }}</title>
-    <link href="/assets/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
-    <link href="/assets/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
     {%raw%}{% if page.use_math %}{%endraw%}
       {%raw%}{% include mathjax_support %}{%endraw%}
     {%raw%}{% endif %}{%endraw%}
