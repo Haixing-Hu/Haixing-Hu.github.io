@@ -1,15 +1,15 @@
 /**
- *  A javascript used to add css for tables generated from the markdown
+ *  Adds "table" and "table-bordered" class for tables generated from the
+ *  markdown.
+ *
+ *  @param el
+ *    An DOM element. This function will fix all `<table>` elements under this
+ *    element.
  */
-function fix_table_style(els) {
-    for (var i in els) {
-        var div = els[i];
-        if (div.className == "post-content") {
-            var tables = div.getElementsByTagName("table");
-            for (var j = 0; j < tables.length; ++j) {
-                var tb = tables[j];
-                tb.className = "table table-bordered";
-            }
-        }
+function fix_table_style(el) {
+    var tables = el.getElementsByTagName("table");
+    for (var j = 0; j < tables.length; ++j) {
+        var tb = tables[j];
+        tb.className += "table table-bordered";
     }
 }

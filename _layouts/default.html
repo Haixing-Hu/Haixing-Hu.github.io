@@ -48,8 +48,11 @@
         {{ content }}
       </div>
       <script type="text/javascript">
-        fix_cjk_linebreak(document.getElementById("content"));
-        fix_table_style(document.getElementsByTagName("div"));
+        var el = document.getElementById("content");
+        console.log("start fix_cjk_linebreak");
+        fix_cjk_linebreak(el);
+        console.log("start fix_table_style");
+        fix_table_style(el);
       </script>
       <hr/>
       {% include footer %}
