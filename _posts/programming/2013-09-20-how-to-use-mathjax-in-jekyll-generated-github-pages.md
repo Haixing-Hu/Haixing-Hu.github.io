@@ -18,7 +18,7 @@ Suppose that you have correctly installed and configured the Jekyll for your
 site. If you don't know how to do that, goolge it by yourself. The following
 instructions will help you to use MathJax in Jekyll.
 
-## Use the correct Markdown processor
+### Use the correct Markdown processor
 
 I have tried almost all the markdown processors. For example,
 [kramdown](http://kramdown.rubyforge.org/), which was said to have build-in
@@ -36,7 +36,7 @@ Change your `_config.yml` as follows to use the
 
     markdown: maruku
 
-## Modify the page template
+### Modify the page template
 
 Now we have to modify the page template to add the support of MathJax.
 
