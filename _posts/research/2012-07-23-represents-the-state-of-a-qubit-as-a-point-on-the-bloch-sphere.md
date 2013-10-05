@@ -3,7 +3,7 @@ layout: post
 title: "Represents the state of a qubit as a point on the Bloch sphere"
 author: Haixing Hu
 category: research
-tags: [quantum computing, Bloch sphere]
+tags: [quantum computing, Bloch sphere, notes]
 use_math: true
 ---
 

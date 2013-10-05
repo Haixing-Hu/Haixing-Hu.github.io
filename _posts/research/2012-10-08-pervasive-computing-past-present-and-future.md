@@ -3,7 +3,7 @@ layout: post
 title: "Pervasive computing: Past, present, and future"
 author: Stan Kurkovsky
 category: research
-tags: [reading notes, pervasive computing]
+tags: [pervasive computing, notes]
 ---
 
 This post is the reading notes of the following paper:
