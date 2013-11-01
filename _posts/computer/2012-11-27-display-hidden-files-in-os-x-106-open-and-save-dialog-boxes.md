@@ -24,16 +24,16 @@ I forgot to mention that the option is hidden, too.
 Fortunately, there is now a simple keyboard trick that allows hidden files and
 folders to display in any ‘Open’ or ‘Save’ dialog box.
 
-  1. Launch the application you wish to use to edit or view the hidden file.
-  2. Select ‘Open’ from the application’s File menu.
-  3. An Open Dialog box will display.
-  4. With the dialog box as the front-most window (you can click once in the
-     dialog box to make sure it’s in front), press the command, shift, and
-     period keys at the same time.
-  5. The dialog box now will display any hidden files or folders within its
-     list items.
-  6. You can toggle between the hidden files and folders being displayed by
-     pressing command, shift, period again.
+1. Launch the application you wish to use to edit or view the hidden file.
+2. Select ‘Open’ from the application’s File menu.
+3. An Open Dialog box will display.
+4. With the dialog box as the front-most window (you can click once in the
+   dialog box to make sure it’s in front), press the command, shift, and
+   period keys at the same time.
+5. The dialog box now will display any hidden files or folders within its
+   list items.
+6. You can toggle between the hidden files and folders being displayed by
+   pressing command, shift, period again.
 
 Once the hidden files and folders display in the dialog box, you can navigate
 and open the files just as you would any other file in the Finder.
