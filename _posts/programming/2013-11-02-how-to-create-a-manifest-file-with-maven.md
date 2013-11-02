@@ -105,33 +105,42 @@ When using the above `maven-dependency-plugin`, Eclipse's m2e plugin will report
 
 	maven-dependency-plugin (goals "copy-dependencies", "unpack") is not supported by m2e.
 
-It seems to be a known issue. You should instruct m2e to ignore this. Add the following inside your <build/> tag:
 
-	<!-- Ignore/Execute plugin execution -->
-    <plugin>
-        <groupId>org.eclipse.m2e</groupId>
-        <artifactId>lifecycle-mapping</artifactId>
-        <version>1.0.0</version>
-        <configuration>
-            <lifecycleMappingMetadata>
-                <pluginExecutions>
-                    <!-- copy-dependency plugin -->
-                    <pluginExecution>
-                        <pluginExecutionFilter>
-                            <groupId>org.apache.maven.plugins</groupId>
-                            <artifactId>maven-dependency-plugin</artifactId>
-                            <versionRange>[1.0.0,)</versionRange>
-                            <goals>
-                                <goal>copy-dependencies</goal>
-                            </goals>
-                        </pluginExecutionFilter>
-                        <action>
-                            <ignore />
-                        </action>
-                    </pluginExecution>
-                </pluginExecutions>
-            </lifecycleMappingMetadata>
-        </configuration>
-    </plugin>
-    
+This is a problem of M2E for [Eclipse M2E plugin execution not covered](http://wiki.eclipse.org/M2E_plugin_execution_not_covered).
+
+To solve this problem, all you got to do is to map the lifecycle it doesn't recognize and instruct M2E to execute it.
+
+You should add this after your `plugins`, inside the `build`. 
+
+	<pluginManagement>
+	  <plugins>
+	    <plugin>
+	      <groupId>org.eclipse.m2e</groupId>
+	      <artifactId>lifecycle-mapping</artifactId>
+	      <version>1.0.0</version>
+	      <configuration>
+	        <lifecycleMappingMetadata>
+	          <pluginExecutions>
+	            <pluginExecution>
+	              <pluginExecutionFilter>
+	                <groupId>org.apache.maven.plugins</groupId>
+	                <artifactId>maven-dependency-plugin</artifactId>
+	                <versionRange>[2.0,)</versionRange>
+	                <goals>
+	                  <goal>copy-dependencies</goal>
+	                </goals>
+	              </pluginExecutionFilter>
+	              <action>
+	                <execute />
+	              </action>
+	            </pluginExecution>
+	          </pluginExecutions>
+	        </lifecycleMappingMetadata>
+	      </configuration>
+	    </plugin>
+	  </plugins>
+	</pluginManagement>
+
+This will remove the error and make M2E recognize the goal `copy-depencies` of `maven-dependency-plugin` and make the POM work as expected, copying dependencies to folder every time Eclipse build it. If you just want to ignore the error, then you change `<execute />` for `<ignore />`. No need for enclosing your `maven-dependency-plugin` into `pluginManagement`, as suggested before.
+
 Please check [http://stackoverflow.com/questions/8706017/maven-dependency-plugin-goals-copy-dependencies-unpack-is-not-supported-b]() for more details.    
