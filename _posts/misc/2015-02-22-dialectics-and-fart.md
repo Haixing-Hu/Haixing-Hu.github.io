@@ -3,7 +3,7 @@ layout: post
 title: "辩证法与放屁"
 author: 佚名
 category: misc
-tags: philosophy,funny
+tags: [philosophy, funny]
 ---
 
 #### 第一堂课
