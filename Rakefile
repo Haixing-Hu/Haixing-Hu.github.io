@@ -43,7 +43,7 @@ module JB
 end #JB
 
 # Usage: rake post title="A Title" [tagline="tagline"] [date="2012-02-09"]
-# [category="category"] [tags=[tag1, tag2]]  [author="author name"]
+# [category="category"] [tags="[tag1, tag2]"]  [author="author name"]
 # [source_url="http://www.example.com/example.html"]
 desc "Begin a new post in #{CONFIG['posts']}"
 task :post do
